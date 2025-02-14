@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Be My Valentine</title>
+  <style>
+    body {
+      /* Background with flames and hearts.
+         Replace 'your-flames-hearts-image.jpg' with your desired image URL */
+      background: url('index bground.gif') no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      margin-top: 15%;
+    }
+    h1 {
+      font-size: 3em;
+      text-shadow: 2px 2px 4px #000;
+    }
+    .button {
+      padding: 15px 30px;
+      margin: 10px;
+      font-size: 1.5em;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .yes-button {
+      background-color: #e74c3c;
+    }
+    .yes-button:hover {
+      background-color: #c0392b;
+    }
+    .no-button {
+      background-color: #95a5a6;
+      /* No action on click */
+      pointer-events: none;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Will You Be My Valentine?</h1>
+    <!-- Yes button leads to the celebration page -->
+    <button class="button yes-button" onclick="location.href='celebration.html'">Yes</button>
+    <!-- No button is inactive -->
+    <button class="button no-button">No</button>
+  </div>
+</body>
+</html>
